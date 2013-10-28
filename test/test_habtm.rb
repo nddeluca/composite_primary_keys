@@ -1,7 +1,7 @@
 require File.expand_path('../abstract_unit', __FILE__)
 
 class TestHabtm < ActiveSupport::TestCase
-  fixtures :suburbs, :restaurants, :restaurants_suburbs, :products
+  fixtures :suburbs, :restaurants, :products
 
   def test_has_and_belongs_to_many
     @restaurant = Restaurant.find([1,1])
